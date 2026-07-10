@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Delivery Schedule Filter</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Library Download JPG -->
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h2>📦 Delivery Schedule Filter</h2>
+
+    <p class="subtitle">
+        👤 BM Rifqi D Rachmat
+    </p>
+
+    <textarea
+        id="input"
+        placeholder="Paste isi chat WhatsApp di sini..."></textarea>
+
+    <div class="button-group">
+
+        <button id="btnFilter" onclick="filterStore()">
+            🔍 Filter
+        </button>
+
+        <button id="btnClear" onclick="clearData()">
+            🗑 Clear
+        </button>
+
+        <button id="btnCopy" onclick="copyResult()">
+            📋 Copy
+        </button>
+
+        <button id="btnJPG" onclick="downloadJPG()">
+            🖼 JPG
+        </button>
+
+    </div>
+
+    <!-- Progress Bar -->
+    <div id="progressContainer">
+
+        <div class="progress-title">
+
+            <span>📊 Progress Pengiriman</span>
+
+            <span id="progressText">0 / 10 Store</span>
+
+        </div>
+
+        <div class="progress">
+
+            <div id="progressBar"></div>
+
+        </div>
+
+    </div>
+
+    <!-- ========================= -->
+    <!-- AREA YANG AKAN DIJADIKAN JPG -->
+    <!-- ========================= -->
+
+    <div id="captureArea">
+
+        <div id="tanggal"></div>
+
+        <div id="hasil"></div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
